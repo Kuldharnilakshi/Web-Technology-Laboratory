@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Sign Up | Supermarket</title>
+    <link rel="stylesheet" href="signup.css">
+</head>
+<body>
+
+<div class="signup-container">
+    <h2>Create Account</h2>
+
+    <form onsubmit="return validateSignup()">
+
+        <div class="input-group">
+            <input type="text" id="name" placeholder="Full Name">
+            <span class="error" id="nameError"></span>
+        </div>
+
+        <div class="input-group">
+            <input type="text" id="email" placeholder="Gmail Address">
+            <span class="error" id="emailError"></span>
+        </div>
+
+        <div class="input-group">
+            <input type="password" id="password" placeholder="Password">
+            <span class="error" id="passError"></span>
+        </div>
+
+        <div class="input-group">
+            <input type="password" id="confirmPassword" placeholder="Confirm Password">
+            <span class="error" id="confirmError"></span>
+        </div>
+
+        <button type="submit">Sign Up</button>
+    </form>
+
+    <p class="note">Already have an account? <a href="login.html">Login</a></p>
+</div>
+
+<script src="signup.js"></script>
+</body>
+</html>
