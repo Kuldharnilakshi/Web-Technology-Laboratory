@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Registration Form</title>
+    <link rel="stylesheet" href="registration.css">
+</head>
+<body>
+
+<div class="container">
+    <h2>Registration Form</h2>
+
+    <form onsubmit="return validateForm()">
+
+        <input type="text" id="name" placeholder="Full Name">
+        <span class="error" id="nameError"></span>
+
+        <input type="text" id="email" placeholder="Email Address">
+        <span class="error" id="emailError"></span>
+
+        <input type="text" id="mobile" placeholder="Mobile Number">
+        <span class="error" id="mobileError"></span>
+
+        <div class="gender">
+            <label>Gender:</label>
+            <input type="radio" name="gender" value="Male"> Male
+            <input type="radio" name="gender" value="Female"> Female
+            <input type="radio" name="gender" value="Other"> Other
+        </div>
+        <span class="error" id="genderError"></span>
+
+        <input type="date" id="dob">
+        <span class="error" id="dobError"></span>
+
+        <input type="text" id="pincode" placeholder="Pincode">
+        <span class="error" id="pincodeError"></span>
+
+        <textarea id="address" placeholder="Address"></textarea>
+        <span class="error" id="addressError"></span>
+
+        <button type="submit">Register</button>
+
+    </form>
+</div>
+
+<script src="registration.js"></script>
+</body>
+</html>
