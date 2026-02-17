@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Groceries | Supermarket</title>
+    <link rel="stylesheet" href="grocery.css">
+</head>
+<body>
+
+<header class="grocery-header">
+    <h1>Groceries</h1>
+    <p>Daily essentials at best prices</p>
+</header>
+
+<!-- PRODUCTS -->
+<section class="grocery-container">
+
+    <div class="product-card">
+        <img src="rice.jpg">
+        <h3>Basmati Rice</h3>
+        <p class="price">₹120 / kg</p>
+        <button onclick="addToCart('Basmati Rice',120)">Add to Cart</button>
+    </div>
+
+    <div class="product-card">
+        <img src="wheat.jpg">
+        <h3>Wheat Flour</h3>
+        <p class="price">₹60 / kg</p>
+        <button onclick="addToCart('Wheat Flour',60)">Add to Cart</button>
+    </div>
+
+    <div class="product-card">
+        <img src="oil.jpg">
+        <h3>Sunflower Oil</h3>
+        <p class="price">₹140 / L</p>
+        <button onclick="addToCart('Sunflower Oil',140)">Add to Cart</button>
+    </div>
+
+    <div class="product-card">
+        <img src="sugar.jpg">
+        <h3>Sugar</h3>
+        <p class="price">₹45 / kg</p>
+        <button onclick="addToCart('Sugar',45)">Add to Cart</button>
+    </div>
+
+    <div class="product-card">
+        <img src="dal.jpg">
+        <h3>Toor Dal</h3>
+        <p class="price">₹160 / kg</p>
+        <button onclick="addToCart('Toor Dal',160)">Add to Cart</button>
+    </div>
+
+    <div class="product-card">
+        <img src="salt.jpg">
+        <h3>Salt</h3>
+        <p class="price">₹20</p>
+        <button onclick="addToCart('Salt',20)">Add to Cart</button>
+    </div>
+
+    <div class="product-card">
+        <img src="tea.jpg">
+        <h3>Tea Powder</h3>
+        <p class="price">₹250</p>
+        <button onclick="addToCart('Tea Powder',250)">Add to Cart</button>
+    </div>
+
+    <div class="product-card">
+        <img src="coffee.jpg">
+        <h3>Coffee</h3>
+        <p class="price">₹300</p>
+        <button onclick="addToCart('Coffee',300)">Add to Cart</button>
+    </div>
+
+    <div class="product-card">
+        <img src="biscuits.jpg">
+        <h3>Biscuits</h3>
+        <p class="price">₹30</p>
+        <button onclick="addToCart('Biscuits',30)">Add to Cart</button>
+    </div>
+
+    <div class="product-card">
+        <img src="atta.jpg">
+        <h3>Atta</h3>
+        <p class="price">₹55</p>
+        <button onclick="addToCart('Atta',55)">Add to Cart</button>
+    </div>
+
+</section>
+
+<!-- CART -->
+<section class="cart-section">
+    <h2>Your Cart</h2>
+    <ul id="cartItems"></ul>
+</section>
+
+<!-- JAVASCRIPT -->
+<script>
+    function addToCart(name, price) {
+        let cart = document.getElementById("cartItems");
+
+        let li = document.createElement("li");
+        li.innerHTML = `
+            ${name} - ₹${price}
+            <button onclick="buyNow('${name}')">Buy Now</button>
+        `;
+
+        cart.appendChild(li);
+    }
+
+    function buyNow(product) {
+        alert("You bought: " + product);
+    }
+</script>
+
+</body>
+</html>

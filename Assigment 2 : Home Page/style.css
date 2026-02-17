@@ -1,0 +1,239 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+/* Header */
+header {
+    background-color: #146b22;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+/* Navbar */
+nav {
+    background-color: #faefef;
+    padding: 12px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* Normal nav links */
+nav a {
+    margin: 0 12px;
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: #1a8f2d;
+}
+
+/* Left side menu links */
+.nav-links {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+/* Right side auth buttons */
+.auth {
+    display: flex;
+    gap: 5px;
+}
+
+/* Buttons */
+.btn {
+    padding: 6px 14px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+/* Login button */
+.login {
+    color: #1a8f2d;
+    border: 1px solid #1a8f2d;
+    background-color: transparent;
+}
+
+.login:hover {
+    background-color: #1a8f2d;
+    color: white;
+}
+
+/* Signup button */
+.signup {
+    background-color: #1a8f2d;
+    color: white;
+}
+
+.signup:hover {
+    background-color: #146b22;
+}
+
+
+/* Hero Section */
+.hero {
+    background-image: url("dmart.png"); 
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero-content {
+    background-color: rgba(0, 0, 0, 0.6);
+    color: white;
+    padding: 30px;
+    text-align: center;
+    border-radius: 8px;
+}
+
+.hero-content h2 {
+    font-size: 32px;
+}
+
+.hero-content button {
+    margin-top: 15px;
+    padding: 10px 20px;
+    border: none;
+    background-color: #1a8f2d;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.hero-content button:hover {
+    background-color: #146b22;
+}
+
+/* Footer */
+footer {
+    background-color: #146b22;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
+/* Header layout */
+header {
+    background-color: #146b22;
+    color: white;
+    padding: 15px 20px;
+    display: flex;
+    align-items: center;
+}
+
+/* Logo on left */
+.header-left {
+    flex: 1;
+}
+
+.logo {
+    height: 50px;   /* adjust if needed */
+}
+
+/* Center text */
+.header-center {
+    flex: 2;
+    text-align: center;
+}
+.logo {
+    height: 135px;
+    width: 135px;
+    border-radius: 50%;      /* 🔥 makes it circle */
+    object-fit: cover;       /* prevents image stretching */
+    border: 2px solid white; /* optional but looks nice */
+}
+
+.cart {
+    font-size: 22px;
+    cursor: pointer;
+}
+
+/* Right side header (search + cart) */
+.header-right {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 15px;
+}
+
+/* Search box container */
+.search-box {
+    position: relative;
+}
+
+/* Search input */
+.search-box input {
+    padding: 8px 14px;
+    width: 200px;
+    border-radius: 20px;
+    border: none;
+    outline: none;
+    font-size: 14px;
+    transition: all 0.3s ease;
+}
+
+/* On click / focus */
+.search-box input:focus {
+    width: 240px;
+    box-shadow: 0 0 6px rgba(255, 255, 255, 0.7);
+}
+
+/* Cart icon */
+.cart {
+    font-size: 24px;
+    cursor: pointer;
+}
+/* Shop Section */
+.shop-section {
+    padding: 60px 20px;
+    text-align: center;
+    background-color: #f7f7f7;
+}
+
+.shop-section h2 {
+    color: #146b22;
+    margin-bottom: 30px;
+}
+
+/* Cards */
+.shop-options {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.shop-card {
+    background-color: white;
+    width: 180px;
+    height: 140px;
+    text-decoration: none;
+    color: black;
+    border-radius: 12px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.15);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    transition: transform 0.3s;
+}
+
+.shop-card p {
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+.shop-card:hover {
+    transform: translateY(-8px);
+}
